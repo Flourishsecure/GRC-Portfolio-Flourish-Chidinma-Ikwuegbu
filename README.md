@@ -14,10 +14,10 @@ governance.
 ## What's In This Portfolio
 
 ### [Security Monitoring Case Study](./security-monitoring-case-study/README.md)
-A case study summarizing a cybersecurity internship at 
-a pre-launch, Cloudflare-based web application, covering 
-WAF monitoring, traffic analysis, and security 
-documentation.
+A case study documenting a cybersecurity internship at 
+a pre-launch, Cloudflare-based authentication platform, covering 
+WAF monitoring, traffic analysis, security 
+documentation, and post-launch production validation.
 
 ### [Risk Register](./risk-register/README.md)
 A structured risk register identifying and prioritizing 
