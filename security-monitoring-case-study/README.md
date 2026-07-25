@@ -1,7 +1,7 @@
-# Security Monitoring Case Study — Pre-Launch Startup Environment
+# Security Monitoring Case Study — Pre-Launch to Production Environment
 
 ## Summary
-A remote, part-time cybersecurity internship at a pre-launch,
+A remote, part-time cybersecurity internship at a pre-launch
 Cloudflare-based authentication platform, conducted under
 read-only access and direct founder supervision. The role
 involved daily security monitoring, audit-style documentation,
@@ -12,7 +12,8 @@ and an authorised WAF control exception introduced to support
 OAuth machine-to-machine integration with an external ecommerce
 platform. Findings throughout this case study are mapped to
 NIST CSF 2.0 functions to demonstrate the practical application
-of GRC principles in a real, evolving environment.
+of GRC principles in a real, evolving environment, from pre-launch 
+security monitoring through to live production validation.
 
 ## Overview
 This case study summarizes a remote, part-time cybersecurity
@@ -29,7 +30,10 @@ surfaced a discrepancy in SSL/TLS certificate renewal timing
 that was raised with and clarified by the founder, and
 documented an authorised control exception introduced to
 support OAuth machine-to-machine integration with an external
-ecommerce platform.
+ecommerce platform. The platform has since successfully launched 
+and is now operating in a live production environment, with the 
+intern continuing to contribute to ongoing monitoring and validation
+activities.
 
 ## My Role
 - **Position:** Cybersecurity Intern (Remote, Part-Time)
@@ -58,7 +62,7 @@ flows continued to function correctly alongside active
 security measures. The overall goal was to produce clear,
 structured documentation that gave the founder ongoing
 visibility into the platform's security posture and supported
-informed decision-making ahead of launch.
+informed decision-making ahead of and following launch.
 
 ## Methodology
 Monitoring was conducted daily through read-only access to
@@ -202,24 +206,83 @@ document.
 12. Documentation of authorised control exceptions
     and configuration changes
 
+## Platform Launch & Production Validation
+
+Following the pre-launch monitoring period, 
+the authentication platform successfully 
+launched and is now actively powering a 
+live ecommerce environment. The platform's 
+passwordless authentication infrastructure 
+including the WAF configurations, SSL/TLS 
+settings, and OAuth machine-to-machine 
+integration documented during monitoring 
+is operational and serving real users in 
+a production setting.
+
+As part of continued internship activity, 
+a post-launch access test was conducted, 
+successfully authenticating into the live 
+production environment using the platform's 
+passwordless authentication system. The 
+authentication flow, including magic link 
+delivery and session establishment  
+functioned correctly end-to-end, confirming 
+the stability of the authentication 
+infrastructure documented during the 
+monitoring period.
+
+An additional observation was noted during 
+access: the newly launched domain was 
+initially flagged as a false positive by 
+endpoint antivirus software, a known 
+reputation-based blocking behaviour for 
+newly registered domains. A VirusTotal 
+scan returned a clean status 200 result 
+with no security vendor flags, confirming 
+the domain was safe. This highlights a 
+real-world deployment consideration 
+new platforms may encounter legitimate 
+user access issues due to domain reputation 
+lag, even when technically secure.
+
+This outcome validates the security baseline 
+established during the monitoring period and 
+confirms that the layered controls documented, 
+including the WAF mitigations that reduced 
+malicious registration attempts from 5,400+ 
+to single digits, were effective in preparing 
+the platform for a stable public launch.
+
 ## Reflection
-This internship gave me hands-on exposure to what
-security monitoring and governance look like in a
-real, evolving environment, not just in theory, but
-through actual incidents that required pattern
-recognition, careful documentation, and clear
-communication with stakeholders. Tracking the bot
-attack from detection through resolution, learning
-how email deliverability connects back to domain
-authentication and security posture, and documenting
-a real-world control exception introduced to support
-a live integration deepened my understanding of how
-interconnected security, compliance, and operational
-decisions really are. Coming from an accounting
-background, I found that skills like attention to
-detail, structured documentation, and escalation
-discipline translated directly into this work. This
-experience has reinforced my decision to pursue a
-career in GRC, where I can combine that same rigor
-with a growing technical foundation to help
-organizations build and maintain trustworthy systems.
+This internship gave me hands-on exposure to what 
+security monitoring and governance look like in a 
+real, evolving environment, not just in theory, but 
+through actual incidents that required pattern 
+recognition, careful documentation, and clear 
+communication with stakeholders. Tracking the bot 
+attack from detection through resolution, learning 
+how email deliverability connects back to domain 
+authentication and security posture, and documenting 
+a real-world control exception introduced to support 
+a live integration deepened my understanding of how 
+interconnected security, compliance, and operational 
+decisions really are.
+
+Witnessing the platform successfully launch into 
+production and being able to authenticate into 
+a live ecommerce environment powered by the same 
+infrastructure I monitored, added a dimension to 
+this experience that most internships never offer. 
+It confirmed that structured, audit-style 
+documentation contributes meaningfully to real 
+deployment outcomes, not just compliance checkboxes.
+
+Coming from an accounting background, I found that 
+skills like attention to detail, structured 
+documentation, and escalation discipline translated 
+directly into this work. This experience has 
+reinforced my decision to pursue a career in GRC, 
+where I can combine that same rigor with a growing 
+technical foundation to help organizations build 
+and maintain trustworthy systems.
+
