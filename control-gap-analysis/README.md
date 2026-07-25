@@ -78,3 +78,25 @@ tighten the exemption scope on a case-by-case basis as
 each integration matures. Consider formally documenting 
 an accepted risk entry for this exception in the risk 
 register.
+
+## 6. Domain Reputation Lag — Post-Launch Access Consideration
+
+Following public launch, the platform's 
+domain was flagged as a false positive by 
+endpoint security software, temporarily 
+blocking legitimate user access. A 
+VirusTotal scan confirmed the domain was 
+clean with no security vendor detections. 
+This behaviour is common for newly 
+registered domains that have not yet 
+established a reputation history with 
+security vendors.
+
+**Recommendation:** Prior to public launch, 
+submit the domain for reputation review 
+with major security vendors and antivirus 
+providers to pre-emptively establish a 
+clean reputation history and reduce the 
+likelihood of legitimate users being 
+blocked by endpoint security tools.
+
